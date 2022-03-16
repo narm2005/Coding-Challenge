@@ -1,6 +1,8 @@
 package com.mindex.challenge.data;
 
+import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 public class Employee {
     private String employeeId;
@@ -9,7 +11,8 @@ public class Employee {
     private String position;
     private String department;
     private List<Employee> directReports;
-
+    private Set<Compensation> Compensation;
+    
     public Employee() {
     }
 
@@ -60,4 +63,11 @@ public class Employee {
     public void setDirectReports(List<Employee> directReports) {
         this.directReports = directReports;
     }
+
+	public Object map(Object object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	    
 }
